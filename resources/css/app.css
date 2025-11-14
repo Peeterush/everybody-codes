@@ -6,6 +6,84 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans:
+        'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
+}
+
+@import 'leaflet';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    color: #ff6e00;
+}
+
+#source {
+    background: #f2f2f2;
+    padding: 8px;
+    margin: 16px auto;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#source a {
+    font-weight: bold;
+}
+
+h1 {
+    padding: 20px 0 20px 55px;
+    margin: 0 0 0 20px;
+    background: url('video-camera-icon.png') no-repeat;
+    background-size: 40px;
+    background-position: 0 50%;
+}
+
+#camerasContainer {
+    margin-top: 16px;
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: start;
+    overflow-x: auto;
+}
+
+#camerasContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+#camerasContainer table th {
+    background: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+}
+
+#camerasContainer table td {
+    padding: 4px 8px;
+}
+
+#camerasContainer table tr:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: #f2f2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
 }

@@ -22,3 +22,11 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+*.key
+*.crt
+_ide_helper*.php
+.phpstorm.meta.php
+.node-version
+.php-version
+php.ini
+.user.ini
